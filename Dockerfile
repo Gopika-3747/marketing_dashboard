@@ -9,8 +9,6 @@ COPY . /app
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-# Copy .env if you use environment variables
-COPY .env /app/.env
 
 # Expose Streamlit's default port
 EXPOSE 8501
