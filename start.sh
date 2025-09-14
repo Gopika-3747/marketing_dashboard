@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-streamlit run run_dashboard.py
+python run_dashboard.py
