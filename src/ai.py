@@ -1,13 +1,10 @@
 
 import google.generativeai as genai
-import pandas as pd
-import streamlit as st
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import GEMINI_API_KEY
 
-# Setup Gemini AI model once at module load
 if GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
     _gemini_model = genai.GenerativeModel('gemini-2.5-flash')
@@ -18,7 +15,7 @@ def ask_ai(question, marketing_data, business_data):
     if not _gemini_model:
         return "AI not available. Please add GEMINI_API_KEY to config.py"
 
-    # Prepare data context
+   
     context = f"""
     MARKETING DATA SUMMARY:
     - Total Spend: ${marketing_data['spend'].sum():,.0f}

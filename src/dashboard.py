@@ -4,9 +4,9 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from data_processor import load_and_process_data
-from ai_insights import ask_ai
+from ai import ask_ai
 
-st.set_page_config(page_title="Marketing Intelligence Dashboard", page_icon="📊", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Marketing Dashboard",layout="wide", initial_sidebar_state="expanded")
 
 @st.cache_data
 def load_data():
