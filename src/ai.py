@@ -7,7 +7,7 @@ from config import GEMINI_API_KEY
 
 if GEMINI_API_KEY:
     genai.configure(api_key=GEMINI_API_KEY)
-    _gemini_model = genai.GenerativeModel('gemini-2.5-flash')
+    _gemini_model = genai.GenerativeModel('gemini-2.5-pro')
 else:
     _gemini_model = None
 
