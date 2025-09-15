@@ -1,7 +1,6 @@
 # Marketing Intelligence Dashboard
 
-## Overview
-
+Interactive BI dashboard with AI-powered analysis of marketing campaign performance and business outcomes.
 This project is a comprehensive marketing analytics dashboard designed to empower business leaders and marketing teams with actionable insights. Built with Streamlit, it integrates advanced data visualization, AI-powered recommendations, and executive summaries to support strategic decision-making.
 
 ## Key Features
@@ -12,7 +11,7 @@ This project is a comprehensive marketing analytics dashboard designed to empowe
 - **Strategic Recommendations:** AI-driven insights highlight best-performing channels, tactics, and markets, and suggest budget reallocations for maximum ROI.
 - **AI Marketing Assistant:** Powered by Gemini, the assistant answers custom business questions using your marketing and business data context.
 
-## 🎯 Key Metrics
+## Key Metrics
 
 - **ROAS** (Return on Ad Spend)
 - **CTR** (Click-Through Rate)
@@ -34,19 +33,6 @@ This project is a comprehensive marketing analytics dashboard designed to empowe
 - **Data-Driven Decisions:** Enables executives to quickly assess marketing performance and make informed budget and strategy choices.
 - **Scalable Insights:** Easily adapts to new data sources, platforms, and business questions.
 - **Rapid Deployment:** Containerized with Docker and compatible with cloud platforms like Render for easy scaling and access.
-
-# 📊 Marketing Intelligence Dashboard with AI Insights
-
-Interactive BI dashboard with AI-powered analysis of marketing campaign performance and business outcomes.
-
-## 📈 Features
-
-- **AI Chat Assistant**: Ask any questions about your marketing data
-- **Key Metrics**: Spend, Revenue, ROAS, Orders overview
-- **Channel Performance**: ROAS comparison across platforms
-- **Geographic Analysis**: State-wise performance metrics
-- **Trend Analysis**: Time series charts
-- **Interactive Filters**: Date range and platform filtering
 
 ## AI Setup
 
