@@ -1,35 +1,16 @@
-# 📊 Marketing Intelligence Dashboard with AI Insights
+# Marketing Intelligence Dashboard
 
-Interactive BI dashboard with AI-powered analysis of marketing campaign performance and business outcomes.
+## Overview
 
-## 🚀 Quick Start
+This project is a comprehensive marketing analytics dashboard designed to empower business leaders and marketing teams with actionable insights. Built with Streamlit, it integrates advanced data visualization, AI-powered recommendations, and executive summaries to support strategic decision-making.
 
-```bash
-# Install dependencies
-pip install -r requirements.txt
+## Key Features
 
-# Run dashboard
-python run_dashboard.py
-# OR
-streamlit run src/dashboard.py
-```
-
-## 📈 Features
-
-- **🤖 AI Chat Assistant**: Ask any questions about your marketing data
-- **📊 Key Metrics**: Spend, Revenue, ROAS, Orders overview
-- **📈 Channel Performance**: ROAS comparison across platforms
-- **🗺️ Geographic Analysis**: State-wise performance metrics
-- **📈 Trend Analysis**: Time series charts
-- **🔍 Interactive Filters**: Date range and platform filtering
-
-## 🤖 AI Setup
-
-1. **Get Gemini API Key**: Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
-2. **Add to config.py**: Replace `your_gemini_api_key_here` with your actual API key
-3. **Chat with AI**: Ask any questions about your marketing data
-
-*Note: Dashboard works without AI key - shows basic charts only*
+- **Executive Summary:** Instantly view marketing spend, attributed revenue, ROAS, total orders, and customer acquisition cost in a compact, business-friendly format.
+- **Channel & Geographic Analysis:** Interactive charts reveal performance by platform and region, helping identify growth opportunities and optimization areas.
+- **Performance Trends:** Track spend, revenue, ROAS, and growth rates over time to monitor campaign effectiveness.
+- **Strategic Recommendations:** AI-driven insights highlight best-performing channels, tactics, and markets, and suggest budget reallocations for maximum ROI.
+- **AI Marketing Assistant:** Powered by Gemini, the assistant answers custom business questions using your marketing and business data context.
 
 ## 🎯 Key Metrics
 
@@ -40,31 +21,41 @@ streamlit run src/dashboard.py
 - **Customer Acquisition Rate**
 - **Average Order Value**
 
-## 📊 Data Sources
 
-- **Facebook.csv**: Campaign data (ASC, Prospecting tactics)
-- **Google.csv**: Campaign data (Search, Display tactics)
-- **TikTok.csv**: Campaign data (Retargeting, Spark Ads)
-- **business.csv**: Daily business metrics (orders, revenue, customers)
+## Architecture
 
-## 🌐 Deployment
+- **Streamlit Frontend:** Delivers a modern, interactive dashboard experience.
+- **Data Processing:** Modular Python scripts load, clean, and aggregate marketing and business data from CSVs or processed sources.
+- **AI Integration:** Uses Google Gemini API for natural language insights and recommendations.
+- **Configurable & Secure:** API keys and secrets are managed via environment variables for safe deployment.
 
-### Streamlit Cloud (Recommended)
-1. Push code to GitHub
-2. Connect repository to share.streamlit.io
-3. Deploy with one click
+## Business Value
 
-### Local Development
-```bash
-streamlit run src/marketing_dashboard.py
-```
+- **Data-Driven Decisions:** Enables executives to quickly assess marketing performance and make informed budget and strategy choices.
+- **Scalable Insights:** Easily adapts to new data sources, platforms, and business questions.
+- **Rapid Deployment:** Containerized with Docker and compatible with cloud platforms like Render for easy scaling and access.
 
-## 📋 Requirements
+# 📊 Marketing Intelligence Dashboard with AI Insights
 
-- Python 3.8+
-- Streamlit
-- Pandas
-- Plotly
-- NumPy
+Interactive BI dashboard with AI-powered analysis of marketing campaign performance and business outcomes.
 
----
+## 📈 Features
+
+- **AI Chat Assistant**: Ask any questions about your marketing data
+- **Key Metrics**: Spend, Revenue, ROAS, Orders overview
+- **Channel Performance**: ROAS comparison across platforms
+- **Geographic Analysis**: State-wise performance metrics
+- **Trend Analysis**: Time series charts
+- **Interactive Filters**: Date range and platform filtering
+
+## AI Setup
+
+1. **Get Gemini API Key**: Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. **Add to config.py**: Replace `your_gemini_api_key_here` with your actual API key
+3. **Chat with AI**: Ask any questions about your marketing data
+
+*Note: Dashboard works without AI key - shows basic charts only*
+
+## Deployment
+Deployed Link: 
+https://marketing-dashboard-pq91.onrender.com
